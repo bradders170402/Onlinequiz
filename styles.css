@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F9; /* Light background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 auto; /* Center the quiz container horizontally */
+    max-width: 600px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    
+    color: #333333;                   /* Dark gray for header text */
+    background-color: #F2F2F2;        /* Light gray background */
+    padding: 15px 30px;
+    border-radius: 8px;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Quiz container */
+#quiz-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px; /* Adjusted to move quiz container down */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777777; /* Medium gray for footer text */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Green for main buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Add some spacing between buttons */
+.quiz-controls button {
+    margin: 5px;
+}
+
+/* Link styling */
+a {
+    color: #2196F3; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFC107; /* Amber color for hover effect on links */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem; /* Reduce header font size on smaller screens */
+        padding: 10px 20px; /* Reduce header padding */
+    }
+
+    #quiz-container {
+        width: 90%; /* Make quiz container take up more space on smaller screens */
+        margin-top: 20px;
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width on mobile */
+        padding: 15px;
+    }
+}

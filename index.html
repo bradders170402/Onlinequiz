@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Brad's Quiz Challenge</h1>
+  </header>
+
+  <main id="quiz-container">
+    <div id="quiz-question">
+      <h2>Question 1: What does the 'section' element in HTML represent?</h2>
+    </div>
+
+    <div id="quiz-options">
+      <label>
+        <input type="radio" name="answer" value="a"> 
+        a) A block of navigation links
+      </label>
+      <label>
+        <input type="radio" name="answer" value="b"> 
+        b) A generic container for styling
+      </label>
+      <label>
+        <input type="radio" name="answer" value="c"> 
+        c) A thematic grouping of content
+      </label>
+      <label>
+        <input type="radio" name="answer" value="d"> 
+        d) Inline text formatting
+      </label>
+    </div>
+
+    <div class="quiz-controls">
+      <button id="prev-btn" disabled>Previous</button>
+      <button id="next-btn">Next</button>
+      <button id="submit-btn" style="display:none;">Submit</button>
+    </div>
+
+    <div id="quiz-score" style="display:none">
+      <!-- Score or result text will be shown here -->
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Brad's Quiz App. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
